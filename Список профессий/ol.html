@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1> Миссия Колонизация Марса</h1>
+<h4> И на Марсе будут яблони цвести!</h4>
+<h1>Список професий</h1>
+{% set user_list = ['Программист', 'Инжинер', 'Водитель', 'Врач'] %}
+<ol>
+    {% for user in user_list %}
+    <li>{{ user }} {% if loop.first %} {% elif loop.last %} {% endif %}
+    </li>
+    {% endfor %}
+</ol>
+</body>
+</html>
