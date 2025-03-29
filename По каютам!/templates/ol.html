@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1> Миссия Колонизация Марса</h1>
+<h4> И на Марсе будут яблони цвести!</h4>
+<h1>Список профессий</h1>
+{% set user_list = ['Программист', 'Инженер', 'Водитель', 'Врач'] %}
+<h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Размещение по каютам</h2>
+
+{% for user in user_list %}
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ user }} - Каюта № {{ loop.index }}
+        {% if loop.first %}
+        Капитан корабля{% endif %}</p>
+{% endfor %}
+</body>
+</html>
