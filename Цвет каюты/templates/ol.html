@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миссия Колонизация Марса</title>
+    <style>
+        .square {
+            height: 500px;
+            width: 750px;
+            background-color: {{color}};
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Миссия Колонизация Марса</h1>
+<h4>И на Марсе будут яблони цвести!</h4>
+<center>
+    <h1>Оформление каюты</h1>
+</center>
+<table>
+    <thead>
+    <tr>
+        <th>Цвет стен</th>
+        <th>Марсианинин</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <div class="square"></div>
+        </td>
+        <td>
+            <div>
+                <img src="{{ url_for('static', filename=age) }}" alt="Марсианинин"
+                     style="max-width: 750px; height: 496px;">
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
