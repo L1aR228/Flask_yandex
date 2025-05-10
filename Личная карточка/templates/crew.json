@@ -1,0 +1,22 @@
+{
+    "crew": [
+        {
+            "first_name": "Итачи",
+            "last_name": "Учиха",
+            "photo": "img/itachi.webp",
+            "specialties": ["ниндзя", "гений"]
+        },
+        {
+            "first_name": "Обито",
+            "last_name": "Учиха",
+            "photo": "img/obito.jpg",
+            "specialties": ["камикадзе", "лидер"]
+        },
+        {
+            "first_name": "Саске",
+            "last_name": "Учиха",
+            "photo": "img/sasuke.jpg",
+            "specialties": ["авантюрист", "месть"]
+        }
+    ]
+}

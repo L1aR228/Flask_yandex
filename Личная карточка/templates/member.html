@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{ member.first_name }} {{ member.last_name }}</h2>
+    <img src="{{ url_for('static', filename=member.photo) }}"
+         alt="{{ member.first_name }}"
+         style="width: 300px; height: 300px; object-fit: cover; border-radius: 50%;">
+
+    <h3>Специальности:</h3>
+    <ul>
+        {% for specialty in member.specialties|sort %}
+        <li>{{ specialty }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
